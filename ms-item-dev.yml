@@ -1,0 +1,5 @@
+server:
+  port: 8002
+
+configuracion:
+  texto: Entorno Desarrollo
