@@ -1,0 +1,8 @@
+config:
+  security:
+    oauth:
+      client:
+        id: back
+        secret: 123456
+      jwt:
+        key: pantro_chitara_felino_tigro_carlota_inquilino
