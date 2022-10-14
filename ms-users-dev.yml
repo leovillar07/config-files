@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:3306/db_ms_users
+    username: postgres
+    password: 81195118Lvr@@
+    driver-class-name: org.postgresql.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        sql: debug
