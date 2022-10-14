@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ms-producto
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_microservicios?serverTimezone=America/Lima
+    username: root
+    password: 81195118Lvr@@
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+
+server:
+  port: ${PORT:0}
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: https://server-eureka-leovr.azurewebsites.net:443/eureka
