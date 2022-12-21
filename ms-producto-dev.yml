@@ -2,7 +2,7 @@ spring:
   application:
     name: ms-producto
   datasource:
-    url: jdbc:mysql://localhost:3306/db_microservicios?serverTimezone=America/Lima
+    url: jdbc:mysql://microservicios-mysql8:3306/db_microservicios?serverTimezone=America/Lima
     username: root
     password: 81195118Lvr@@
     driver-class-name: com.mysql.jdbc.Driver
